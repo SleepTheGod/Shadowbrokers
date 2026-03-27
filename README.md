@@ -1,3 +1,4 @@
+# All .txt files were done by Taylor Christian Newsome 
 # Browsable Content of `eqgrp-auction-file.tar.xz`
 
 * **Original archive**: [https://mega.nz/#!zEAU1AQL!oWJ63n-D6lCuCQ4AY0Cv_405hX8kn7MEsa1iLH5UjKU](https://mega.nz/#!zEAU1AQL!oWJ63n-D6lCuCQ4AY0Cv_405hX8kn7MEsa1iLH5UjKU)
@@ -13,7 +14,7 @@
 * **Community summary credits**:
   `jvoisin` (@ dustri.org) and [@x0rz](https://www.twitter.com/x0rz)
 
-- Reverse Engineered Further By Taylor Christian Newsome [ClumsyLulz / SleepTheGod](https://www.linkedin.com/in/clumsy/)
+- Reverse Engineered Further By Taylor Christian Newsome  [ClumsyLulz / SleepTheGod](https://www.linkedin.com/in/clumsy/)
 ---
 
 ⚠️ **Warning**
