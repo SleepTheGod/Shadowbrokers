@@ -2,6 +2,7 @@
 - Original file: https://mega.nz/#!zEAU1AQL!oWJ63n-D6lCuCQ4AY0Cv_405hX8kn7MEsa1iLH5UjKU
 - Passphrase: `CrDj"(;Va.*NdlnzB9M?@K2)#>deB7mN` (as disclosed by the ShadowBrokers, [source](https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1))
 - This summary is provided by the community: complaints/credits to `jvoisin` @ `dustri.org` and [@x0rz](https://www.twitter.com/x0rz)
+- Reverse Engineered Further By Taylor Christian Newsome [ClumsyLulz / SleepTheGod](https://www.linkedin.com/in/clumsy/)
 
 ⚠️ Some binaries may be picked up by your antivirus
 
