@@ -1,0 +1,5 @@
+    735 ELF 32-bit LSB executable
+    273 ELF 32-bit MSB executable
+    112 ELF 64-bit LSB executable
+      6 ELF 64-bit MSB executable
+      5 ELF 32-bit LSB shared object

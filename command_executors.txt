@@ -1,0 +1,4 @@
+archive_files/bin/connect.new.so
+archive_files/bin/connect.so
+archive_files/bin/connect.so.orig
+archive_files/bin/connect12.so

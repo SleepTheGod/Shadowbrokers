@@ -1,0 +1,5 @@
+archive_files/bin/connect.new.so
+archive_files/bin/connect.so
+archive_files/bin/connect.so.orig
+archive_files/bin/connect12.so
+archive_files/eleganteagle-1.2.0.1/payload/prepare_python_fork_exec

@@ -1,0 +1,406 @@
+                                        New private key for local client.
+                                        New public key for local client.
+                                        Rekeys the local client.
+        or --qskey <32-byte hex>        not set
+    --pri <32-byte hex>                      : Remote private key
+    --pub <32-byte hex>                      : Local public key
+    --qskeyfile <path>              : Default:
+    --tipkey <16-byte hex>          : Default:
+    -r [ --rekey]                   : Description:
+  Generating session key... 
+ ; key_tag= %u
+$FreeBSD: src/include/rpcsvc/key_prot.x,v 1.4 2003/05/04 02:51:42 obrien Exp $
+$FreeBSD: src/lib/libc/db/hash/hash_bigkey.c,v 1.5 2003/02/16 17:29:09 nectar Exp $
+$FreeBSD: src/lib/libc/gen/arc4random.c,v 1.10 2004/03/24 14:44:57 green Exp $
+$FreeBSD: src/lib/libc/rpc/getpublickey.c,v 1.7 2004/10/16 06:11:34 obrien Exp $
+$FreeBSD: src/lib/libc/rpc/key_call.c,v 1.15 2004/10/16 06:11:34 obrien Exp $
+$FreeBSD: src/lib/libc/rpc/key_prot_xdr.c,v 1.5 2004/10/16 06:11:34 obrien Exp $
+$OpenBSD: hash_bigkey.c,v 1.13 2003/08/06 21:08:05 millert Exp $
+$OpenBSD: hash_bigkey.c,v 1.15 2005/03/23 19:34:59 otto Exp $
+$OpenBSD: index.S,v 1.3 2000/12/29 17:34:55 mickey Exp $
+$OpenBSD: strncpy.c,v 1.5 2004/11/28 07:16:54 mickey Exp $
+$OpenBSD: xdr_keydat.c,v 1.6 2003/06/02 03:48:42 deraadt Exp $
+$OpenBSD: xdr_ypreq_key.c,v 1.5 2003/06/02 03:48:42 deraadt Exp $
+$OpenBSD: xdr_ypreq_nokey.c,v 1.5 2003/06/02 03:48:42 deraadt Exp $
+$OpenBSD: xdr_ypresp_key_val.c,v 1.5 2003/06/02 03:48:42 deraadt Exp $
+%s is not bound to any keys
+%s: line %d: list delimiter not followed by keyword
+(annotation?, ((simpleType | complexType)?, (unique | key | keyref)*))
+--qskey[file] and --qsmaxpad are only valid with --appqs
+--qskey[file] must be provided
+--rekey
+--tipkey, --tipuuid, --tipsrc and --tipdst must be provided
+--tipkey, --tipuuid, --tipsrc, and --tipdst args are only valid with --apptip
+.bss.globals_key
+.data.use_thread_key
+.gnu.linkonce.r._ZTI12MapKeyString
+.gnu.linkonce.r._ZTS12MapKeyString
+.gnu.linkonce.r._ZTV12MapKeyString
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGG784dfzESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE13insert_uniqueERKS5_
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGG784dfzESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE4findERS2_
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGG784dfzESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGG784dfzESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE9_M_insertEPSt18_Rb_tree_node_baseSD_RKS5_
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGQ784dfcESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE13insert_uniqueERKS5_
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGQ784dfcESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE4findERS2_
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGQ784dfcESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E
+.gnu.linkonce.t._ZNSt8_Rb_treeI12MapKeyStringSt4pairIKS0_P11MLJGQ784dfcESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE9_M_insertEPSt18_Rb_tree_node_baseSD_RKS5_
+/etc/publickey
+<authdes_marshal: DES encryption failure
+<authdes_seccreate: no public key found for %s
+@(#)key_call.c	1.25	94/04/24 SMI
+AESdecrypt
+AESdecryptCBC
+AESdecryptOFB
+AESencryptCBC
+AESencryptOFB
+AUTH:      chp->keymat has been set
+All 'key' fields must evaluate to a node
+BADKEY
+Bad values for --qskey[file]
+Cannot initialize thread specific keytable lock
+Clear session key data.
+CnC: failed to properly decrypt response.  Retrying ...
+Compress-then-encrypt mode switched to encrypt-then-compress mode.
+Could not find a ip address in keys= line
+Duplicate key-sequence %s in %s
+Duplicate key-sequence found
+Enter key: 
+Error from ourtn, did not find keys=target in tn.spayed
+Force rekeying of the remote endpoint with the provided keys.
+Hflexor
+Initiating RSA key exchange
+Juniper Encryption Services PIC
+Key   (hex):        %0x%0x%0x%0x%0x%0x%0x%0x
+Key (hex):          
+Key Exchange
+M3rkeys
+More than one match found for key-sequence %s of keyref '%s'
+No match found for key-sequence %s of keyref '%s'
+No matching key-sequence found
+No such key in map
+P12MapKeyString
+PQAeS~
+P~AeS
+QS key in file is invalid
+QS key on command line is invalid
+RC6_Encrypt
+RC6_Expand_Key
+RSA KEY with MD5 hash
+RSA key exchange complete
+RSA_CubedEncrypt128
+RSA_ExponDecrypt128
+Rc475d5d
+SECONDDATE: unable to malloc memory for RC6 Key expansion.
+TKEY
+The cardinality of the keyref differs from the cardinality of the referenced key/unique '%s'
+The data buffer is not large enough to hold encrypted payload
+The encryption key is 
+The keyref references a keyref
+Tip key size on command line is invalid
+Usage: %s [--prepend-length] [--xor-seed <0xhhhhhhhh>] [--xor-rotate <n>] [--escape-type <all|cgiemail|nonalnum>] < payload > payload.out
+Usage: rekey
+Valid options for --rekey:
+__key_t
+__key_t:t(15,42)=(0,1)
+__key_t:t(16,42)=(0,1)
+__key_t:t(8,44)=(0,1)
+_nc_init_keytry
+_nc_keypad
+_nc_tinfo_fkeys
+_pthread_key_create
+_pthread_key_delete
+_rl_control_keypad
+_rl_dispatching_keymap
+_rl_enable_keypad
+_rl_enable_meta_key
+_rl_keymap
+_rl_keyseq_chain_dispose
+_rl_keyseq_cxt_alloc
+_rl_keyseq_cxt_dispose
+_rl_next_macro_key
+accesskey
+allocating a IDC key
+allocating an IDC key-sequence
+allocating an array of key-sequences
+allocating the IDC key storage list
+arrow-key-prefix
+arrow_key_map
+authdes_marshal: DES encryption failure
+authdes_refresh: keyserv(1m) is unable to encrypt session key
+authdes_seccreate: keyserv(1m) is unable to generate session key
+authdes_seccreate: no public key found for %s
+authdes_validate: DES decryption failure
+bad binary digit in key
+bad hex digit in key
+bad key
+bufsend: RC6 encryption error: 0x%08x
+cnt < (((uint32_t) (((__locale_t) (__pthread_internal_tsd_get != ((void *)0) ? __pthread_internal_tsd_get (_LIBC_TSD_KEY_LOCALE) : __libc_tsd_LOCALE_data))->__locales[__LC_CTYPE])->values[((int) (_NL_CTYPE_MB_CUR_MAX) & 0xffff)].word))
+conditional section INCLUDE or IGNORE keyword expected
+cvtkey
+de_keysl
+de_keysr
+decryption failed (block corrupted)
+decryption failed (incomplete block)
+decryption failure
+decryptsessionkey
+des_cipher
+des_setkey
+emacs_ctlx_keymap
+emacs_meta_keymap
+emacs_standard_keymap
+en_keysl
+en_keysr
+enable-keypad
+encrypt
+encryption failure
+getpublickey
+global constructors keyed to 
+global destructors keyed to 
+gnu_has_meta_key
+has_key
+has_meta_key
+inv_key_perm
+key '
+key identity-constraint
+keyRef '
+keySchedule
+key_a1
+key_a3
+key_b2
+key_backspace
+key_beg
+key_btab
+key_c1
+key_c3
+key_cancel
+key_catab
+key_clear
+key_close
+key_command
+key_copy
+key_create
+key_ctab
+key_dc
+key_defined
+key_dl
+key_down
+key_eic
+key_end
+key_enter
+key_eol
+key_eos
+key_exit
+key_f0
+key_f1
+key_f10
+key_f11
+key_f12
+key_f13
+key_f14
+key_f15
+key_f16
+key_f17
+key_f18
+key_f19
+key_f2
+key_f20
+key_f21
+key_f22
+key_f23
+key_f24
+key_f25
+key_f26
+key_f27
+key_f28
+key_f29
+key_f3
+key_f30
+key_f31
+key_f32
+key_f33
+key_f34
+key_f35
+key_f36
+key_f37
+key_f38
+key_f39
+key_f4
+key_f40
+key_f41
+key_f42
+key_f43
+key_f44
+key_f45
+key_f46
+key_f47
+key_f48
+key_f49
+key_f5
+key_f50
+key_f51
+key_f52
+key_f53
+key_f54
+key_f55
+key_f56
+key_f57
+key_f58
+key_f59
+key_f6
+key_f60
+key_f61
+key_f62
+key_f63
+key_f7
+key_f8
+key_f9
+key_find
+key_help
+key_home
+key_ic
+key_il
+key_left
+key_ll
+key_mark
+key_message
+key_mouse
+key_move
+key_next
+key_npage
+key_open
+key_options
+key_perm
+key_perm_maskl
+key_perm_maskr
+key_ppage
+key_previous
+key_print
+key_redo
+key_reference
+key_refresh
+key_replace
+key_restart
+key_resume
+key_right
+key_save
+key_sbeg
+key_scancel
+key_scommand
+key_scopy
+key_screate
+key_sdc
+key_sdl
+key_select
+key_send
+key_seol
+key_sexit
+key_sf
+key_sfind
+key_shelp
+key_shifts
+key_shome
+key_sic
+key_sleft
+key_smessage
+key_smove
+key_snext
+key_soptions
+key_sprevious
+key_sprint
+key_sr
+key_sredo
+key_sreplace
+key_sright
+key_srsume
+key_ssave
+key_ssuspend
+key_stab
+key_sundo
+key_suspend
+key_undo
+key_up
+keybase
+keymap
+keymap is set to `%s'
+keypad_local
+keypad_xmit
+keyref
+keyref identity-constraint
+keys=
+kw_decryptBlock
+kw_encryptBlock
+kw_generateWrapKey
+kw_unwrapKey
+makekey
+no closing `"' in key binding
+number_of_function_keys
+old_rawkey0
+old_rawkey1
+onkeydown
+onkeypress
+onkeyup
+onkeyupsummary
+other_non_function_keys
+pBbufrecv: RC6 decryption error: 0x%08x
+pfkey
+pkey_key
+pkey_local
+pkey_plab
+pkey_xmit
+pthread_key_create
+pthread_key_t
+pthread_key_t:t(11,11)=(0,4)
+pthread_key_t:t(17,12)=(0,4)
+pthread_key_t:t(18,12)=(0,4)
+publickey
+publickey.byname
+qskey
+qskeyfile
+rc6key
+re-allocating the IDC key storage list
+reallocating an array of key-sequences
+rekey
+request_fill: invalid key: %d
+rl_arrow_keys
+rl_bind_key
+rl_bind_key_if_unbound
+rl_bind_key_if_unbound_in_map
+rl_bind_key_in_map
+rl_bind_keyseq
+rl_bind_keyseq_if_unbound
+rl_bind_keyseq_if_unbound_in_map
+rl_bind_keyseq_in_map
+rl_binding_keymap
+rl_copy_keymap
+rl_discard_keymap
+rl_executing_keymap
+rl_function_of_keyseq
+rl_get_keymap
+rl_get_keymap_by_name
+rl_get_keymap_name
+rl_get_keymap_name_from_edit_mode
+rl_invoking_keyseqs
+rl_invoking_keyseqs_in_map
+rl_key_sequence_length
+rl_make_bare_keymap
+rl_make_keymap
+rl_read_key
+rl_set_key
+rl_set_keyboard_input_timeout
+rl_set_keymap
+rl_set_keymap_from_edit_mode
+rl_translate_keyseq
+rl_unbind_key
+rl_unbind_key_in_map
+rl_untranslate_keyseq
+set keymap %s
+setkey
+tipkey
+tkey
+u_key_perm
+usage: bdes [-abdp] [-F bit] [-f bit] [-k key] [-m bit] [-o bit] [-v vector]
+vi_insertion_keymap
+vi_movement_keymap
+xmlSchemaFormatIDCKeySequence
+xor-rotate
+xor-seed

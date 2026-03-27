@@ -1,0 +1,10 @@
+    739 80386
+    259 Sparc
+    111 X86-64
+      7 PowerPC
+      5 IA-64
+      4 R3000
+      3 v8+
+      1 v9
+      1 Alpha
+      1 ARM
