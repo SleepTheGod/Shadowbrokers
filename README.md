@@ -1,4 +1,4 @@
-# All .txt files were done by Taylor Christian Newsome 
+ All .txt files were done by Taylor Christian Newsome 
 # Browsable Content of `eqgrp-auction-file.tar.xz`
 
 * **Original archive**: [https://mega.nz/#!zEAU1AQL!oWJ63n-D6lCuCQ4AY0Cv_405hX8kn7MEsa1iLH5UjKU](https://mega.nz/#!zEAU1AQL!oWJ63n-D6lCuCQ4AY0Cv_405hX8kn7MEsa1iLH5UjKU)
